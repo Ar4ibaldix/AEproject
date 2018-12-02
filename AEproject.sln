@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AEproject", "AEproject\AEproject.csproj", "{2E650C4F-9D66-4D26-A7C7-9C77BCEF8916}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AEproject.Web", "AEproject\AEproject.Web.csproj", "{2E650C4F-9D66-4D26-A7C7-9C77BCEF8916}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AEproject.BusinessLayer", "AEproject.BusinessLayer", "{BFDE0C3F-4E95-4591-A3F8-0C1763EC22DE}"
 EndProject

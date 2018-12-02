@@ -23,4 +23,9 @@
     <TypeScriptCompile Include="ClientApp\polyfills.ts" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AEproject
 {
+    using DL;
     using Microsoft.AspNetCore.SpaServices.Webpack;
     using Microsoft.EntityFrameworkCore;
 
@@ -19,8 +15,8 @@ namespace AEproject
         public void ConfigureServices(IServiceCollection services)
         {
             // TODO: Uncomment after DB instalation and after creation out "DBContext"
-            //string connectionString = "Server=(localdb)\\mssqllocaldb;Database=productsdb;Trusted_Connection=True;";
-            //services.AddDbContext<НАшконтекст>(options => options.UseSqlServer(connectionString));
+            string connectionString = "Data Source=localhost;Initial Catalog=AEproject;Trusted_Connection=True;";
+            services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(connectionString));
 
             services.AddMvc();
         }

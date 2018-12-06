@@ -54,5 +54,8 @@
     <Folder Include="Feature2\" />
     <Folder Include="ServicesReusableStaffHelpers\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

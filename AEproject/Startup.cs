@@ -34,9 +34,22 @@ namespace AEproject
                 });
             }
 
-            app.UseDefaultFiles();
+            //app.UseDefaultFiles();
             app.UseStaticFiles();
-            app.UseMvc(); // For working with controllers
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "areaRoute",
+                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                );
+
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapSpaFallbackRoute("angular-fallback",
+                    new { controller = "Home", action = "Index" });
+            });
         }
     }
 }

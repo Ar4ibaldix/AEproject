@@ -70,6 +70,8 @@ namespace AEproject
             }
 
             //app.UseDefaultFiles();
+            app.UseHttpsRedirection();
+            app.UseAuthentication();
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {
